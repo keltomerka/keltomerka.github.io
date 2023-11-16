@@ -1,0 +1,328 @@
+:root{
+    --main-font-family: Raleway;
+    --main-color: rgb(2, 2, 34);
+    --pripary-color: rgb(13, 110, 253);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background: linear-gradient(320deg, rgb(41, 41, 255), rgb(201, 209, 255));
+    height: 100vh;
+}
+header{
+    height: 10vh;
+    font-family: Playpen Sans;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    display: flex;
+    padding: 30px 30px;
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--main-color);
+    column-gap: 0px;
+}
+nav div:hover{
+    color: var(--pripary-color);
+    transition: 0.3s all;
+}
+nav div{
+   cursor: pointer;
+   margin-right: 50px; 
+}
+#user-modul{
+    background-color: aliceblue;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    width: 350px;
+    height: 310px;
+    z-index: 4;
+}
+#iconhead{
+padding-right: 50px;
+padding-left: 50px;
+}
+#user-modul div{
+ margin: 0 auto;
+ font-size: 20px;
+ font-family: var(--main-font-family);
+ color: var(--main-color);
+ padding: 20px;
+}
+#user-modul button{
+    width: 80px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.container{
+    width: 70vw;
+    height: 100vh;
+    background-color: rgb(247, 248, 249);
+    border-radius: 20px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.infonav{
+    display: flex;
+    justify-content: space-between;
+}
+.infonav div{
+    margin: 20px;
+}
+.infonav button{
+    height: 40px;
+    margin: 20px;
+}
+#plus{
+    padding-left: 10px;
+}
+.stories-container{
+    border-left: 2px solid var(--main-color);
+    border-right: 2px solid var(--main-color);
+    margin: 30px auto;
+    width: 90%;
+    height: 90%;
+    max-height: 800px;
+    overflow-x: auto;
+}
+.stories{
+    width: 90%;
+    height: 25%;
+    border: 2px solid var(--main-color);
+    margin: 30px auto 0 auto;
+    border-radius: 10px;
+    position: relative;
+    font-family: Playpen Sans;
+}
+.storyhead{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.strhd-btns{
+    display: flex;
+    
+}
+.txtabout{
+    margin: 10px 20px;
+    max-height: 75px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+.data{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+.str-mdl-class{
+    background-color: rgb(245, 248, 251); 
+    border: 3px solid var(--main-color);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    row-gap: 10%;
+    width: 970px;
+    height: 700px;
+    z-index: 2;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.story-modul-btns, .story-modul-head {
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+}
+.story-modul-btns button{
+    width: 100px;
+}
+#txtstory, #edit-txtstory{
+    width: 700px;
+    min-height: 400px;
+    max-height: 400px;
+}
+#opentxt{
+    height: 400px;
+}
+#maintxt{
+    max-width: 700px;
+    max-height: 400px;
+    word-break: break-all;
+    overflow: auto;
+}
+
+.modul-txt{
+    display: flex;
+    column-gap: 30px;
+    font-family: var(--main-font-family);
+    font-size: 23px;
+    color: var(--main-color);
+}
+.story-modul-head input{
+    border-color: var(--pripary-color);
+    border-radius: 5px;
+}
+.story-modul-head span{
+    font-family: var(--main-font-family);
+    color: var(--main-color);
+    font-size: 18px;
+}
+textarea{
+    border-color: var(--pripary-color);
+}
+.mperdiar{
+    font-family: var(--main-font-family);
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+#searchInput {
+    width: 200px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#searchButton {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#currenttime{
+    cursor: text;
+}
+@media screen and (max-width:1400px){
+    .txtabout{
+        max-width: 598px;
+        word-break: normal;
+    }
+    .firststory-txt{
+        max-height: 23px;
+    }
+}
+@media screen and (max-width:950px) {
+    header{
+        flex-direction: column;
+        height: 150px;
+    }
+    #caption{
+        font-size: 20px;
+    }
+    .head{
+        padding-bottom: 0;
+    }
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    section{
+        height: 620px;
+    }
+    .txtabout {
+        margin: 10px 20px;
+        max-height: 22px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+    }
+    .str-mdl-class{
+        width: 600px;
+    }
+    .story-modul-btns, .story-modul-head {
+        width: 500px;
+    }
+    #txtstory, #edit-txtstory {
+        width: 400px;
+        min-height: 300px;
+        max-height: 300px;
+    }
+    .txtabout{
+        max-width: 260px;
+    }
+    
+}
+@media screen and (max-width:730px){
+    .str-mdl-class{
+        width: 400px;
+    }
+    .story-modul-btns, .story-modul-head {
+        width: 350px;
+    }
+    .strhd-btns{
+        height: 35px;
+    }
+    .txtabout{
+        display: none;
+    }
+    #txtstory, #edit-txtstory {
+        width: 200px;
+        min-height: 300px;
+        max-height: 300px;
+    }
+    .txtabout{
+        max-width: 120px;
+    }
+    .infonav button {
+        height: 62px;
+    }
+
+}
+@media screen and (max-width:500px){
+    .txtabout{
+        max-width: 90px;
+    }
+    .data{
+        display: none;
+    }
+}
+@media screen and (max-width:450px){
+    .txtabout{
+       display: none;
+    }
+    .infonav button {
+        font-size: 15px;
+    }
+    #plus{
+        display: none;
+    }
+    .infonav button {
+        height: 80px;
+    }
+    .str-mdl-class{
+        width: 300px;
+    }
+    .story-modul-btns, .story-modul-head {
+        width: 250px;
+    }
+    #txtstory, #edit-txtstory {
+        width: 200px;
+        min-height: 300px;
+        max-height: 300px;
+    }
+    .story-modul-head{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .modul-txt{
+        column-gap: 0;
+        font-size: 16px;
+    }
+}
