@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDiary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Raleway:ital@1&family=Sometype+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="icon" href="istockphoto-1430643108-170667a.jpg">
+    <link rel="stylesheet" href="welcomePage.css">
+</head>
+<body>
+  <header>
+    <div class="head">
+      <div id="headLogo">MyDiary</div>
+    </div>
+  </header>
+  <section>
+      <div class="welcome">Welcome to our personal diary <span>MyDiary</span></div>
+      <div><p class="aboutapp">MyDiary is a personal diary application. With this application, you can record your thoughts, feelings, events, and important happenings on a daily basis. It is an ideal tool for those who want to keep their memories in one place.</p></div>
+      <div class="modalicon position-absolute top-40 start-40" id="modal">
+        <h4>Enter the required information</h4>
+        <input maxlength="30" type="text" class="welInp" id="userName" placeholder="Create username">
+        <input type="email" class="welInp" id="userEmail" placeholder="Enter your email">
+        <input type="tel" class="welInp" id="userNumber" placeholder="Enter your telefon number">
+        <input type="password" class="welInp" id="userPassword" placeholder="Create password">
+        <div class="modalbtns">
+          <button class="btn btn-outline-primary" id="btnCreate">Create</button>
+          <button class="btn btn-outline-primary" id="btnClose">Close</button>
+        </div>
+      </div>
+      <div class="btn">
+          <button class="btn btn-outline-primary btn-lg" id="btn-sing">Sing in</button>
+      </div>
+  </section>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ <script type="module" src="welcomePage.js"></script>
+</body>
+</html>
