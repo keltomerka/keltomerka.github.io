@@ -1,0 +1,125 @@
+:root{
+    --main-font-family: Raleway;
+    --main-color: rgb(2, 2, 34);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background: linear-gradient(320deg, rgb(41, 41, 255), rgb(201, 209, 255));
+    height: 100vh;
+}
+header{
+    height: 10vh;
+    font-family: Playpen Sans;  
+
+}
+.head{
+    padding: 30px 30px;
+}
+#headLogo{
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--main-color);
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    color: var(--main-color);
+    margin-top: 50px;
+}
+.welcome{
+  font-family: var(--main-font-family);
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.welcome span{
+  font-weight: 800;
+}
+.aboutapp{
+    width: 800px;
+    text-align: center;
+    font-family: var(--main-font-family);
+    margin-bottom: 70px;
+    font-size: 23px;
+    
+}
+#btn-sing{
+    width: 200px;
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+footer{
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 500px;
+}
+.modalicon{
+    margin: 0 auto;
+    background-color: aliceblue;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    width: 400px;
+    height: 550px;
+}
+.displayFlex{
+    display: flex;
+}
+.modalicon h4{
+    margin: 0 auto;
+    margin-top: 40px;
+    font-family: var(--main-font-family);
+    font-weight: 600;
+    color: rgb(0, 0, 151);
+}
+.modalicon input{
+    width: 300px;
+    align-self: center;
+    margin: 30px;
+    border: 1px solid rgb(13, 110, 253);
+    border-radius: 0 5px 5px 0px;
+    background-color: rgb(255, 255, 255);
+    height: 32px;
+}
+.modalbtns{
+    align-self: center;
+    display: flex;
+    column-gap: 200px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width:800px) {
+    .welcome{
+        font-size: 23px;
+    }
+    .aboutapp{
+        font-size: 15px;
+        width: 300px;
+    }
+    .modalicon{
+        width: 300px;
+        height: 450px;
+    }
+    .modalicon h4{
+        font-size: 20px;
+    }
+    .modalicon input{
+        width: 200px;
+        align-self: center;
+        margin: 15px;
+    }
+    .modalbtns{
+        column-gap: 100px;
+        margin-top: 40px;
+    }
+    
+}
