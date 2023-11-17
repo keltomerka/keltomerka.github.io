@@ -216,6 +216,15 @@ textarea{
         max-height: 23px;
     }
 }
+@media screen and (max-width:1200px){
+    .txtabout{
+        max-width: 356px;
+        max-height: 20px;
+    }
+    .firststory-txt{
+        max-height: 23px;
+    }
+}
 @media screen and (max-width:950px) {
     header{
         flex-direction: column;
