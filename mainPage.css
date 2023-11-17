@@ -3,6 +3,9 @@
     --main-color: rgb(2, 2, 34);
     --pripary-color: rgb(13, 110, 253);
 }
+/* .firststory{
+    
+} */
 *{
     box-sizing: border-box;
 }
@@ -117,6 +120,8 @@ padding-left: 50px;
     overflow: hidden;
     text-overflow: ellipsis;
     word-break: break-all;
+    max-width: 356px;
+    max-height: 20px;
 }
 .data{
     position: absolute;
@@ -216,7 +221,7 @@ textarea{
         max-height: 23px;
     }
 }
-@media screen and (max-width:1200px){
+/* @media screen and (max-width:1200px){
     .txtabout{
         max-width: 356px;
         max-height: 20px;
@@ -224,7 +229,7 @@ textarea{
     .firststory-txt{
         max-height: 23px;
     }
-}
+} */
 @media screen and (max-width:950px) {
     header{
         flex-direction: column;
