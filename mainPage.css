@@ -103,7 +103,7 @@ padding-left: 50px;
     border-radius: 10px;
     position: relative;
     font-family: Playpen Sans;
-    padding: 4px 2px 22px 10px;
+    
 }
 .storyhead{
     display: flex;
@@ -121,7 +121,7 @@ padding-left: 50px;
     overflow: hidden;
     text-overflow: ellipsis;
     word-break: break-all;
-    max-width: 500px;
+    
 }
 .data{
     position: absolute;
@@ -228,6 +228,9 @@ textarea{
         height: 150px;
     }
     #caption{
+        font-size: 20px;
+    }
+    .storyhead h3{
         font-size: 20px;
     }
     .head{
