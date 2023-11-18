@@ -121,6 +121,7 @@ padding-left: 50px;
     overflow: hidden;
     text-overflow: ellipsis;
     word-break: break-all;
+    max-width: 600px;
     
 }
 .data{
