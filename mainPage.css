@@ -300,6 +300,7 @@ textarea{
     .data{
         display: none;
     }
+    
 }
 @media screen and (max-width:450px){
     .txtabout{
@@ -307,6 +308,9 @@ textarea{
     }
     .infonav button {
         font-size: 15px;
+    }
+    .maintxt{
+        padding: 10px;
     }
     #plus{
         display: none;
