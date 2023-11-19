@@ -267,6 +267,14 @@ textarea{
     }
     
 }
+@media screen and (max-height:790px){
+    .stories {
+        height: 42%;
+    }
+    .container{
+        overflow: hidden;
+    }
+}
 @media screen and (max-width:730px){
     .str-mdl-class{
         width: 400px;
@@ -347,6 +355,9 @@ textarea{
     }
     #caption {
         font-size: 16px;
+    }
+    .stories {
+        height: 25%;
     }
 }
 @media screen and (max-width:380px){
