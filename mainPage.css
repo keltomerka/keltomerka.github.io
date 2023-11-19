@@ -291,6 +291,9 @@ textarea{
     .infonav button {
         height: 62px;
     }
+    body{
+        min-height: 822px;
+    }
 
 }
 @media screen and (max-width:500px){
@@ -347,7 +350,11 @@ textarea{
     }
 }
 @media screen and (max-width:380px){
-    body{
-        min-height: 822px;
+    #caption {
+        font-size: 14px;
+    }
+    .storyhead h3 {
+        font-size: 14px;
+        overflow: hidden;
     }
 }
