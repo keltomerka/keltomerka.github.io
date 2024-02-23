@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Noto Serif Georgian', serif;
+    font-family: 'Noto Serif HK', serif;
+    font-family: 'Shadows Into Light', cursive;
+}
+header{
+    background-color: #668E68;
+    min-height: 80px;
+}
+
+.head-navi a:not(:last-child){
+    padding-right: 50px ;
+    font-family: 'Noto Serif HK', serif;
+    font-size: 18px;
+}
+.logo{
+    font-family: 'Noto Serif Georgian', serif;
+    font-size: 44px;
+    font-weight: 400;
+}
+.mainname{
+    background-image: url(img/background1\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 512px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 110px;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.70);
+}
+.img1{
+    background-image: url(img/drinks1.png);
+    width: 350px;
+    height: 350px;
+    border-radius: 200px;
+    border: 9px solid #81613B;
+    margin-right: 30px;
+    position: relative;
+}
+.img2{
+    background-image: url(img/drinks2.png);
+    width: 350px;
+    height: 350px;
+    border-radius: 200px;
+    border: 9px solid #81613B;
+    margin-right: 30px;
+    position: relative;
+}
+.img3{
+    background-image: url(img/drinks3.png);
+    width: 350px;
+    height: 350px;
+    border-radius: 200px;
+    border: 9px solid #81613B;
+    position: relative;
+    
+}
+.menu{
+    min-height: 710px;
+}
+.namemenu{
+    width: 120px;
+    margin: 0 auto;
+    color: #000;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+    padding-bottom: 40px;
+    margin-top: 60px;
+}
+.namemenu span{
+    font-family: 'Noto Serif HK', serif;
+    font-size: 20px;
+}
+.namefood{
+    color: #000;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'Noto Serif Georgian', serif; 
+    position: absolute;
+    bottom: 20px;
+    left: 130px;
+    background: rgba(255, 255, 255, 0.80);
+}
+.btn1{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Noto Serif HK', serif;
+    background-color: #668E68;
+    width: 160px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 39px;
+    border-radius: 20px;
+}
+a{
+    text-decoration: none;
+    color: #FFF;
+    padding-top: 7px;
+}
+.about{
+    background-image: url(img/background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+}
+.txtabout p{
+    width: 367px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.70);
+    font-weight: 500;
+    font-family: 'Noto Serif HK', serif;
+    padding-bottom: 30px;
+}
+.nmabout{
+    width: 200px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.70);
+    padding-top: 70px;
+}
+.news{
+    min-height: 406px;
+    background: rgba(129, 97, 59, 0.20);
+}
+.newstxt{
+    min-height: 102px;
+}
+.numbernew{
+    padding-top: 20px;
+    font-size: 16px;
+}
+.numbernew span{
+    padding-right: 30px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: 'Noto Serif Georgian', serif;
+}
+.secondnew{
+    padding-top: 0;
+}
+footer{
+    background-color: #000;
+    min-height: 180px;
+    font-family: 'Noto Serif Georgian', serif;
+}
+.contacts{
+    padding-top: 20px;
+}
+.contacts p{
+    width: 185px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.reserved{
+    padding-top: 20px;
+}
+@media screen and (max-width:500px) {
+    .head-navi a>p{
+        font-size: 0px;
+    }
+    .mainname{
+        font-size: 50px;
+    }
+    .btn1{
+        margin-bottom: 50px;
+    }
+}
